@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package capturadatosporteclado;
+
+import java.util.Scanner;
 
 /**
  *
- * @author cymaniatico
+ * @author Luis Garcia
  */
 public class CapturaDatosPorTeclado {
 
@@ -16,6 +13,18 @@ public class CapturaDatosPorTeclado {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        String nombre;
+        int edad;
+        
+        System.out.println("Escriba su primer nombre");
+        //nombre = leer.next();
+        nombre = leer.nextLine();// no funciona bien en ciclos
+        System.out.println("Digite su edad");
+        edad = leer.nextInt();
+        
+        System.out.println("Su nombre es "+nombre+
+                " y su edad es de "+edad+" años");
     }
     
 }
